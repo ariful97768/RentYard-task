@@ -9,6 +9,7 @@ import FileInput from '../Components/fileInput';
 import NumberInput from '../Components/NumberInput';
 import Input from '../Components/Input';
 import OptionsSelect from '../Components/OptionsSelect';
+import Checkbox from '../Components/Checkbox';
 
 const App = () => {
     const [role, setRole] = useState('')
@@ -93,10 +94,7 @@ export const InfoComponent = ({ sectionTitle, role }) => {
                     <Input title={'Zip code*'} placeholderText={'75061'} type={'number'} id={'zip-code'} />
                 </div>}
             </div>
-            <div className='flex max-w-max items-center gap-2 mt-7'>
-                <input type="checkbox" name="" id="checkbox" />
-                <label htmlFor='checkbox'>Accept RentYard property adding terms & condition</label>
-            </div>
+            <Checkbox title={'Accept RentYard property adding terms & condition'} id={'terms'}/>
         </div>
     )
 }
