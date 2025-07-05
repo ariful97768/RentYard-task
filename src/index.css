@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.brdr-primary {
+    border-color: #E0E0E0;
+}
+
+.txt-primary {
+    color: #272B35;
+}
