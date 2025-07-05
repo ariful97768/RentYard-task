@@ -4,7 +4,6 @@ import { BiBuildingHouse } from 'react-icons/bi';
 import { IoKeyOutline } from 'react-icons/io5';
 import { LiaUserTieSolid } from 'react-icons/lia';
 import { BsBuildings } from 'react-icons/bs';
-import Navbar from '../Components/Navbar';
 import { useRef, useState } from 'react';
 import FileInput from '../Components/fileInput';
 import NumberInput from '../Components/NumberInput';
@@ -15,8 +14,7 @@ const App = () => {
     const [role, setRole] = useState('')
     const [propertyType, setPropertyType] = useState('')
 
-    return (<>
-        <Navbar />
+    return (
         <div className='max-w-[1440px] mx-auto'>
             {/* home section */}
             <div className='mt-10 flex flex-col gap-8'>
@@ -46,12 +44,7 @@ const App = () => {
                     <InfoComponent sectionTitle={role === 'landlord' ? 'Proof of ownership' : (role === 'realtor' ? "Realtor verification" : (role === 'company' && 'Company & office info'))} role={role} />
                 </div>
             }
-            <div className='flex w-full justify-between mt-28'>
-                <button className='btn underline'>Back</button>
-                <button className='btn text-white bg-[#316EED]'>Get started</button>
-            </div>
         </div>
-    </>
     );
 };
 

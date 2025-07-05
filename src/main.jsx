@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './Pages/App'
 import Context from './ContextProvider/Context'
+import Layout from './Layout'
 
 createRoot(document.getElementById('root')).render(
   <Context>
     <StrictMode>
-      <App />
-    </StrictMode>,
+      <Layout />
+    </StrictMode> 
   </Context>
 )
