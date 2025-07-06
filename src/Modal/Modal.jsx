@@ -12,7 +12,7 @@ const Modal = ({ modalData }) => {
                     {/* if there is a button in form, it will close the modal */}
                     <div className="modal-action">
                         <form method="dialog">
-                            <button className="btn text-white bg-[#316EED]">Close</button>
+                            <button className="btn text-white bg-[#316EED]">Add</button>
                         </form>
                     </div>
                 </div>
